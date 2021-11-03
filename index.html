@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Wildas Önskelista</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="title">Wildas Önskelista</a>
+            <div class="links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="index.html">Hem</a></li>
+               <li><a href="önskelista.html">Önskelista</a></li>
+               <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+        <div class="text" id="text">
+            <h1 class="home">Snart Är Det Jul!</h1>
+            <p>Nu börjar julen närma sig och det börjar bli dags att tänka på vad
+                vi vill ge till våra nära och kära! Min mor, Angelica, ber ofta om
+                en lista inför julen redan i Oktober så nu tyckte jag att det var dags
+                att samla allt på ett och samma ställe! Här kan ni se bild och länkar
+                till de sakerna som jag önskar mig allra mest till jul (med priser bredvid såklart)
+            </p>
+            <br>
+            <a href="önskelista.html" class="hero-btn">Klicka Här För Att Komma Till Årets Lista</a>
+        </div>
+
+    <!--JavaScript for Toggle Menu-->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

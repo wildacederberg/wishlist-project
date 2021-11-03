@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Zen Antique', serif;
+}
+header {
+    background-image:linear-gradient(to bottom, rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url("annie-spratt-zh7GEuORbUw-unsplash.jpg");
+    background-size:cover;
+    background-position: center;
+    min-height:100vh;
+    width:100%;
+}
+nav {
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items:center;
+}
+.title{
+    font-size:30px;
+}
+.links {
+    flex:1;
+    text-align:right;
+    
+}
+.links ul li {
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;
+    font-size: 13px;
+}
+a {
+    color:white;
+    text-decoration:none;
+}
+.links ul li::after {
+    content:'';
+    width:0%;
+    height:2px;
+    background:white;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.links ul li:hover::after {
+    width:100%
+}
+.text {
+    width: 60%;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.text h1 {
+    font-size:62px;
+    color:white;
+}
+.text p{
+    margin:10px;
+    font-size:14px;
+    color:white;
+    line-height:1.4;
+}
+.hero-btn {
+    display: inline-block;
+    border: 1px solid white;
+    padding:12px 34px;
+    font-size: 13px;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border:1px solid white;
+    background:black;
+    transition:1s;
+}
+nav .fa {
+    display:none;
+    color:white;
+}
+ul {
+    list-style: none;
+
+}
+@media(max-width: 700px) {
+    .text h1 {
+        font-size:20px;
+    }
+    .text {
+        width: 90%;
+        color:black;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align:center;
+    }
+    .links ul li {
+        display:block;
+    }
+    .links {
+        position:fixed;
+        height:100vh;
+        background: darkslategray;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:2;
+        transition:1s;
+    }
+    nav .fa {
+        display:block;
+        color:white;
+        margin:10px;
+        cursor: pointer;
+    }
+    .links ul {
+        padding:30px;
+    }
+}
+
+/*---------- önskelista---------*/
+.wishlist {
+    color:white;
+}
+#text .home::after {
+    content:'';
+    width:0%;
+    height:2px;
+    background:white;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+#text .home:hover::after {
+    width:80%
+}
+#text .wishlist::after {
+    content:'';
+    width:0%;
+    height:2px;
+    background:white;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+#text .wishlist:hover::after {
+    width:50%
+}
+#text .kontakt::after {
+    content:'';
+    width:0%;
+    height:2px;
+    background:white;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+#text .kontakt:hover::after {
+    width:40%
+}
+h1 {
+    font-size: 36px;
+    padding: 15px;
+}
+.doftljus {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: darkslategray;
+    min-height:100vh;
+}
+.spel {
+    background-image:linear-gradient(to bottom, rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url("dilyara-garifullina-f8KalexTJSQ-unsplash.jpg");
+    background-size:cover;
+    background-position: center;
+    min-height:100vh;
+    width:100%;
+    text-align:center;
+}
+.row {
+    margin-top:5;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.row img {
+    border:5px solid;
+    border-color:darkslategray;
+}
+.harvard {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: darkslategray;
+    min-height:100vh;
+}
+.hudvard {
+    background-image:linear-gradient(to bottom, rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url("kelly-sikkema-0vdLxhrb1Qw-unsplash.jpg");
+    background-size:cover;
+    background-position: center;
+    min-height:100vh;
+    width:100%;
+    text-align:center;
+}
+.kladerskor {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: darkslategray;
+    min-height:100vh;
+}
+.elektronik {
+    background-image:linear-gradient(to bottom, rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url("rithika-gopalakrishnan-XdAfqygfuN0-unsplash.jpg");
+    background-size:cover;
+    background-position: center;
+    min-height:100vh;
+    width:100%;
+    text-align:center;
+}

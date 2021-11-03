@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Önskelista</title>
+</head>
+<body>
+        <header>
+            <nav>
+                <a href="index.html" class="title">Wildas Önskelista</a>
+                <div class="links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                   <li><a href="index.html">Hem</a></li>
+                   <li><a href="önskelista.html">Önskelista</a></li>
+                   <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+             <div class="text" id="text">
+            <h1 class="wishlist">Önskelista</h1>
+            <p> Här följer - utan inbördes ordning - de saker jag önskar mig nu till jul!
+                Det finns även länkar till en eller flera platser där varan går att få tag
+                på, samt prislista för dessa. Uppstår det några frågor kring listan eller
+                liknande så finns kontaktuppgifter i fliken "Kontaktuppgifter".
+            </p>
+         </div>
+        </header>
+
+<!--Wishlist-->
+
+        <div class="wishlist">
+            <section class="doftljus">
+                <h1>Doftljus</h1>
+            </section>
+            <section class="spel">
+                <h1>Spel</h1>
+                <section class="row">
+                    <section class="spel-col">
+                       <a href="https://www.iwantoneofthose.com/toys-games/incoherent-card-game/12519622.html?affil=thggpsad&switchcurrency=SEK&shippingcountry=SE&&thg_ppc_campaign=71700000066297276&gclid=Cj0KCQjww4OMBhCUARIsAILndv7Aw-DWl5uu3K1WjfpxdfC4M0rsitRq40FNdntXZlqJfsfAkUSSFJwaAnDWEALw_wcB&gclsrc=aw.ds"><img src="Incoherent.png" alt="Picture of the game 'Incohearent'"></a>
+                        <h2>Incohearent</h2>
+                        <p>Incohearent är ett roligt spel jag velat ha länge,<br>
+                           finns att köpa <a href="https://www.iwantoneofthose.com/toys-games/incoherent-card-game/12519622.html?affil=thggpsad&switchcurrency=SEK&shippingcountry=SE&&thg_ppc_campaign=71700000066297276&gclid=Cj0KCQjww4OMBhCUARIsAILndv7Aw-DWl5uu3K1WjfpxdfC4M0rsitRq40FNdntXZlqJfsfAkUSSFJwaAnDWEALw_wcB&gclsrc=aw.ds">HÄR</a>
+                        (182kr + 35 - 116kr frakt)
+                        </p>
+                    </section>
+                    <section class="spel-col">
+                        <a href="https://www.proshop.se/Braedspel-och-pussel/SKYBOUND-GAMES-Red-Flags-EN/2936291?utm_source=prisjakt&utm_medium=cpc&utm_campaign=pricesite"><img src="Redflags.png" alt="Picture of the game 'Red flags'"></a>
+                        <h2>Red Flags</h2>
+                        <p>Festspel på engelska,<br>
+                           finns att köpa <a href="https://www.proshop.se/Braedspel-och-pussel/SKYBOUND-GAMES-Red-Flags-EN/2936291?utm_source=prisjakt&utm_medium=cpc&utm_campaign=pricesite">HÄR</a>
+                           (349kr)
+                        </p>
+                    </section>
+                </section>
+            </section>
+            <section class="harvard">
+                <h1>Hårvård</h1>
+            </section>
+            <section class="hudvard">
+                <h1>Hudvård</h1>
+            </section>
+            <section class="kladerskor">
+                <h1>Kläder och Skor</h1>
+            </section>
+            <section class="elektronik">
+                <h1>Elektronik</h1>
+            </section>
+        </div>        
+        
+         <!--JavaScript for Toggle Menu-->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
